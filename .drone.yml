@@ -1,4 +1,4 @@
-pipelie:
+pipeline:
  build:
   image: openjdk:8-jdk
   environment:
