@@ -1,0 +1,10 @@
+pipelie:
+ build:
+  image: openjdk:8-jdk
+  environment:
+    - GRADLE_USER_HOME=~/.gradle
+  commands:
+    - ./gradlew clean build --stacktrace
+  when:
+    branch: master
+    event: [ push, pull_request]  
